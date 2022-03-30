@@ -12,11 +12,11 @@ class SQRServiceTest {
             "Averages values,1000,5000,39",
             "No min values,0,99,0",
             "No max values,9802,1000,0",
-            "maximum number of values,100,9801,90"})
+            "Maximum number of values,100,9801,90"})
     void ownCalculate(String testName, int lowlimit, int uplimit, int counter) { //А это чтобы я понял и запомнил!!!
         SQRService calculate = new SQRService(); // подготавливаем данные
-        int currentCounter = calculate.calculatePipez(lowlimit, uplimit); // вызываем целевой метод
-        assertEquals(currentCounter, counter);
+        int currentCounter = calculate.calculateSQR(lowlimit, uplimit); // вызываем целевой метод
+        assertEquals(counter, currentCounter);
         // производим проверку (сравниваем ожидаемый и фактический):
         // если true — то PASS, если false — то FAIL
     }

@@ -1,7 +1,7 @@
 package ru.netology.sqr;
 
 public class SQRService {
-    public int calculatePipez(int lowLimit, int upLimit) {//А это чтобы я понял и запомнил!!!
+    public int calculateSQR(int lowLimit, int upLimit) {//А это чтобы я понял и запомнил!!!
         int count = 0; //счёт если входит в лимиты
         for (int i = 10; i <= 99; i++) {
             int sqr = i * i;
